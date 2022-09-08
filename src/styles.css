@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    --background-color: #002137;
+    --clock-color: #002e4e;
+    --text-color: white;
+
+    --huge-font: 37px;
+    --large-font: 30px;
+    --medium-font: 23px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: var(--medium-font);
+    cursor: default;
+}
+
+#clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    max-width: 600px;
+    background-color: var(--clock-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px black;
+}
+
+#title {
+    text-align: center;
+    font-size: var(--huge-font);
+    font-weight: bold;
+}
+
+#lengths-selector {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+#lengths-selector > div {
+    /* padding: 20px; */
+}
+
+.controller {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.increment-decrement {
+    cursor: pointer;
+}
+
+#session {
+    /* border: 1px solid blue; */
+}
+
+#session-label {
+    margin-bottom: 10px;
+}
+
+#session > div {
+    /* border: 1px solid green; */
+}
+
+#break {
+    /* border: 1px solid blue; */
+}
+
+#break-label {
+    margin-bottom: 10px;
+}
+
+#break > div {
+    /* border: 1px solid green; */
+}
+
+#timer {
+    text-align: center;
+    padding: 20px;
+    font-size: var(--large-font);
+    font-weight: bold;
+}
+
+#control {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    font-size: var(--huge-font);
+    /* padding: 10px; */
+}
+
+#control:hover {
+    cursor: pointer;
+}
+
+#control > div {
+    /* padding: 5px; */
+}
